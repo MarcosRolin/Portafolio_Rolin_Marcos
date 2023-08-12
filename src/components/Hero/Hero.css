@@ -1,0 +1,99 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #a7a7a7;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.icon-container i {
+  font-size: 6rem;
+  transition: transform 0.3s ease;
+}
+
+.skills-conteiner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.icon-container p {
+  margin-top: 10px;
+}
+
+.html:hover {
+  transform: scale(1.2);
+  color: #fa0c0c;
+  transition: color .5s;
+}
+
+.css:hover {
+  transform: scale(1.2);
+  color: #0c73fa;
+  transition: color .5s;
+}
+
+.js:hover {
+  transform: scale(1.2);
+  color: #fa9b0c;
+  transition: color .5s;
+}
+
+.node:hover {
+  transform: scale(1.2);
+  color: #3b7415;
+  transition: color .5s;
+}
+
+.react:hover {
+  transform: scale(1.2);
+  color: #2e99ac;
+  transition: color .5s;
+}
+
+.git:hover {
+  transform: scale(1.2);
+  color: #757575;
+  transition: color .5s;
+}
+
+
+.icon-text {
+  color: black;
+}
+
+.hero-content {
+  text-align: center;
+  color: #162938;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+
+  .hero {
+    height: 80vh;
+  }
+
+  .skills-conteiner {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
